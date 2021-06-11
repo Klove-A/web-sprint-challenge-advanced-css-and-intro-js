@@ -306,14 +306,11 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(array, key, key2){
-  for(let i = 0; i < array.length; i++){
-    if(array[key] >= 100){
-      return array[key2].filter(obj => obj[key] > 100);
-    }
+function lotsOfArt(array){
+  return array.filter(obj => obj["paintings"] > 100).map(obj => obj["name"]);
 }
 
-console.log("task 7", lotsOfArt(artists, "paintings", "name"));
+console.log("task 7", lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
