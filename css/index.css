@@ -144,10 +144,7 @@ button:hover{
         width: 100%;
     }
     .artist img{
-        width: 80%;
+        width: 75%;
+        object-fit: contain;
     }
-}
-
-@media(max-width: 500px){
-    
 }
